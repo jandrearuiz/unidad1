@@ -1,0 +1,141 @@
+$plexmono: 'IBM Plex Mono', monospace;
+$plexsans: 'IBM Plex Sans', sans-serif;
+$texto: #060A24;
+$point: #0000EC;
+
+body {
+  font-size: 16px;
+}
+
+.nav {
+  
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: $plexmono;
+    padding: 10px 16px 10px;
+
+    @media only screen and (min-width:992px) {
+      padding: 26px 100px;
+   }
+
+
+  }
+
+  &__logo {
+
+    @media only screen and (min-width:992px) {
+       min-width: 36px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    list-style: none;
+  }
+
+  &__item {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  &__link {
+    display: none;
+    text-decoration: none;
+    color: $texto;
+
+      @media only screen and (min-width:992px) {
+      display: flex;
+    }
+    
+  }
+}
+
+.header {
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 29px 16px 0px;
+    margin:0;
+
+    @media only screen and (min-width:992px) {
+      padding: 120px 200px 0px;
+   }
+  }
+
+  &__title {
+    font-family: $plexsans;
+    font-size: 36px;
+    line-height: 42px;
+    color: $texto;
+    justify-self: flex-start;
+    max-width: 240px;
+    font-weight: 450;
+    letter-spacing: 0;
+    margin:0;
+        
+    &:after {
+      content: '.';
+
+      @media only screen and (min-width:992px) {
+        color: $point;          
+     }
+      
+    }
+    
+    @media only screen and (min-width:992px) {
+      font-size: 64px;
+      line-height: 84px;
+      max-width: initial;   
+   }
+  
+  }
+
+  &__span {
+
+    position: relative;
+    letter-spacing: 0;
+    
+    &:after {
+      content:'';
+      height: 2px;
+      width: 100%;
+      background: $texto;
+      position: absolute;
+      left: 0;
+      top: 57%;
+      transform: translateY(-57%);
+
+      @media only screen and (min-width:992px) {
+        height: 4px;   
+     }
+      
+    }
+  }
+
+  &__description {
+    font-size: 14px;
+    line-height: 22px;
+    font-family: $plexmono;
+    text-align: justify;
+    padding-top: 16px;
+    padding-bottom: 36px;
+    margin: 0;
+
+    @media only screen and (min-width:992px) {
+      font-size: 16px;  
+      padding-top: 0;
+      padding-bottom: 56px;
+      max-width: 610px;
+      text-align: justify;
+   }
+
+  }
+
+}
+
+
+

@@ -1,0 +1,150 @@
+body {
+  font-size: 16px;
+}
+
+.nav__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "IBM Plex Mono", monospace;
+  padding: 10px 16px 10px;
+}
+
+@media only screen and (min-width: 992px) {
+  .nav__container {
+    padding: 26px 100px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .nav__logo {
+    min-width: 36px;
+  }
+}
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.nav__item {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.nav__link {
+  display: none;
+  text-decoration: none;
+  color: #060A24;
+}
+
+@media only screen and (min-width: 992px) {
+  .nav__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 29px 16px 0px;
+  margin: 0;
+}
+
+@media only screen and (min-width: 992px) {
+  .header__container {
+    padding: 120px 200px 0px;
+  }
+}
+
+.header__title {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 36px;
+  line-height: 42px;
+  color: #060A24;
+  justify-self: flex-start;
+  max-width: 240px;
+  font-weight: 450;
+  letter-spacing: 0;
+  margin: 0;
+}
+
+.header__title:after {
+  content: '.';
+}
+
+@media only screen and (min-width: 992px) {
+  .header__title:after {
+    color: #0000EC;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .header__title {
+    font-size: 64px;
+    line-height: 84px;
+    max-width: initial;
+  }
+}
+
+.header__span {
+  position: relative;
+  letter-spacing: 0;
+}
+
+.header__span:after {
+  content: '';
+  height: 2px;
+  width: 100%;
+  background: #060A24;
+  position: absolute;
+  left: 0;
+  top: 57%;
+  -webkit-transform: translateY(-57%);
+          transform: translateY(-57%);
+}
+
+@media only screen and (min-width: 992px) {
+  .header__span:after {
+    height: 4px;
+  }
+}
+
+.header__description {
+  font-size: 14px;
+  line-height: 22px;
+  font-family: "IBM Plex Mono", monospace;
+  text-align: justify;
+  padding-top: 16px;
+  padding-bottom: 36px;
+  margin: 0;
+}
+
+@media only screen and (min-width: 992px) {
+  .header__description {
+    font-size: 16px;
+    padding-top: 0;
+    padding-bottom: 56px;
+    max-width: 610px;
+    text-align: justify;
+  }
+}
+/*# sourceMappingURL=style.css.map */
