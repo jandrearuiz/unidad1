@@ -2,6 +2,13 @@ $plexmono: 'IBM Plex Mono', monospace;
 $plexsans: 'IBM Plex Sans', sans-serif;
 $texto: #060A24;
 $point: #0000EC;
+$btn: #00F3BB;
+$gradient1: #0000FE;
+$gradient2: #00F0B8;
+$white:  #FFFFFF;
+$media: 992px;
+$gradient3: #0000FF;
+$gradient4: #0000A3;
 
 body {
   font-size: 16px;
@@ -16,7 +23,7 @@ body {
     font-family: $plexmono;
     padding: 10px 16px 10px;
 
-    @media only screen and (min-width:992px) {
+    @media only screen and (min-width:$media) {
       padding: 26px 100px;
    }
 
@@ -25,7 +32,7 @@ body {
 
   &__logo {
 
-    @media only screen and (min-width:992px) {
+    @media only screen and (min-width:$media) {
        min-width: 36px;
     }
   }
@@ -45,7 +52,7 @@ body {
     text-decoration: none;
     color: $texto;
 
-      @media only screen and (min-width:992px) {
+      @media only screen and (min-width:$media) {
       display: flex;
     }
     
@@ -58,10 +65,10 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 29px 16px 0px;
+    padding: 29px 16px 24px;
     margin:0;
 
-    @media only screen and (min-width:992px) {
+    @media only screen and (min-width:$media) {
       padding: 120px 200px 0px;
    }
   }
@@ -80,13 +87,13 @@ body {
     &:after {
       content: '.';
 
-      @media only screen and (min-width:992px) {
+      @media only screen and (min-width:$media) {
         color: $point;          
      }
       
     }
     
-    @media only screen and (min-width:992px) {
+    @media only screen and (min-width:$media) {
       font-size: 64px;
       line-height: 84px;
       max-width: initial;   
@@ -109,7 +116,7 @@ body {
       top: 57%;
       transform: translateY(-57%);
 
-      @media only screen and (min-width:992px) {
+      @media only screen and (min-width:$media) {
         height: 4px;   
      }
       
@@ -125,7 +132,7 @@ body {
     padding-bottom: 36px;
     margin: 0;
 
-    @media only screen and (min-width:992px) {
+    @media only screen and (min-width:$media) {
       font-size: 16px;  
       padding-top: 0;
       padding-bottom: 56px;
@@ -135,7 +142,144 @@ body {
 
   }
 
+  &__btn {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    background: $btn;
+    color: $texto;
+    text-decoration: none;
+    font-family: $plexmono;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 22px;
+
+    @media only screen and (min-width:$media) {
+      max-width: 226px;
+      height: 56px;      
+   }
+  
+    &:hover {
+      color: $white;
+      background: linear-gradient(225deg, $gradient1 0%, $gradient2 100%);
+    }
+  }
+
 }
 
+.card {
+
+  &__container {
+    background: linear-gradient(225deg, $gradient3 0%, $gradient4 100%);
+    padding-bottom: 143.5px;
+  }
+
+  &__title {
+    color: $white;
+    font-family: $plexsans;
+    font-size: 36px;
+    letter-spacing: 0;
+    line-height: 42px;
+    font-weight: 400;
+    margin: 0;
+    padding: 64px 0 21px 16px;
+  }
+
+  &__audio {
+    padding: 5.5px 11px;
+  }
+}
+
+.image {
+
+  &__img {
+    max-width: 360px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-95px);
+  }
+}
+
+.section {
+
+  &__container {
+    padding: 0 16px 54px;
+    transform: translateY(-95px);
+  }
+
+  &__title {
+    font-family: $plexsans;
+    font-size: 36px;
+    line-height: 42px;
+    color: $texto;
+    justify-self: flex-start;
+    max-width: 240px;
+    font-weight: 450;
+    letter-spacing: 0;
+    margin:0;
+  }
+
+  &__description {
+    font-size: 14px;
+    line-height: 22px;
+    font-family: $plexmono;
+    text-align: justify;
+    padding-top: 16px;
+    margin: 0;
+  }
+}
+
+.invite {
+
+  &__container {
+    transform: translateY(-95px);
+  }
+
+  &__title {
+    font-family: $plexsans;
+    font-size: 36px;
+    line-height: 42px;
+    color: $texto;
+    justify-self: flex-start;
+    max-width: 240px;
+    font-weight: 450;
+    letter-spacing: 0;
+    margin:0;
+    padding-left: 16px;
+    padding-bottom: 14px;
+  }
+
+  &__image {
+    width: 100%;
+    display: flex;
+  }
+}
+
+.team {
+
+  &__container {
+    transform: translateY(-95px);
+    padding-top: 48px;
+  }
+
+  &__title {
+    font-family: $plexsans;
+    font-size: 36px;
+    line-height: 42px;
+    color: $texto;
+    justify-self: flex-start;
+    max-width: 288px;
+    font-weight: 450;
+    letter-spacing: 0;
+    margin:0;
+    padding-left: 16px;
+    padding-bottom: 24px;
+  }
+}
 
 
