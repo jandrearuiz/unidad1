@@ -195,21 +195,16 @@ body {
 
 .image {
 
-  &__img {
-    max-width: 360px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: translateY(-95px);
-  }
-}
-
-.section {
-
   &__container {
     padding: 0 16px 54px;
     transform: translateY(-95px);
+    display:flex;
+    flex-direction: column;
+  }
+
+  &__img {
+    max-width: 360px;
+    margin: 0 auto;
   }
 
   &__title {
@@ -217,7 +212,6 @@ body {
     font-size: 36px;
     line-height: 42px;
     color: $texto;
-    justify-self: flex-start;
     max-width: 240px;
     font-weight: 450;
     letter-spacing: 0;
@@ -265,6 +259,8 @@ body {
   &__container {
     transform: translateY(-95px);
     padding-top: 48px;
+    display: flex;
+    flex-direction: column;
   }
 
   &__title {
@@ -280,6 +276,80 @@ body {
     padding-left: 16px;
     padding-bottom: 24px;
   }
-}
 
+  &__box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__description {
+    font-family: $plexsans;
+    font-size: 24px;
+    letter-spacing: 0;
+    text-align: center;
+  }
+}
+.new {
+
+  &__container {
+    transform: translateY(-95px);
+    background: linear-gradient(225deg, $gradient3 0%, $gradient4 100%);
+    padding-bottom: 67px;
+  }
+
+  &__title {
+    color: $white;
+    font-family: $plexsans;
+    font-size: 36px;
+    letter-spacing: 0;
+    line-height: 42px;
+    font-weight: 400;
+    margin: 0;
+    text-align: center;
+    padding: 64px 16px 36px;
+  }
+
+  &__btn {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    background: $btn;
+    color: $texto;
+    text-decoration: none;
+    font-family: $plexmono;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 22px;
+    margin: 0 16px;
+  }
+}
+.footer {
+
+  &__container {
+    transform: translateY(-65px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 47px;
+  }
+
+  &__description {
+    font-family: $plexmono;
+    font-size: 14px;
+    color: $texto;
+    letter-spacing: 0;
+    line-height: 22px;
+  }
+
+  &__link {
+    color: $texto;
+    font-size: 16px;
+    line-height: 28px;
+  }
+ 
+}
 
